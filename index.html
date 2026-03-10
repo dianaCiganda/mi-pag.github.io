@@ -31,9 +31,20 @@ src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v20.0&appId=96624
 <div class="player">
 
 <h2>📻 Camino al Bienestar</h2>
-<p>Radio en vivo</p>
+
+<p class="estado">
+<span class="live"></span> EN VIVO
+</p>
 
 <button class="play-btn" onclick="toggleRadio()">▶ Escuchar</button>
+
+<div class="ondas" id="ondas">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 <audio id="radio">
 <source src="http://caminoalbienestar.radio12345.com/" type="audio/mpeg">
@@ -99,14 +110,17 @@ src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v20.0&appId=96624
 <img class="tamanio_buda" src="imagenes/buddha-5967397_1280.jpg">
 </div>
 
-<h2>💬 Deja tu comentario</h2>
+<h2 class="titulo-comentarios">💬 Deja tu comentario</h2>
+
+<div class="contenedor-comentarios">
 
 <div class="fb-comments"
-data-href="https://dianaciganda.github.io/mi-pag.github.io/index.html"
+data-href="https://dianaciganda.github.io/mi-pag.github.io/"
 data-width="100%"
 data-numposts="5">
 </div>
 
+</div>
 <h3>Sos el visitante N°</h3>
 
 <div id="sfcj1bd4z6xqtfddhgps85hrf22aspnqulq"></div>
