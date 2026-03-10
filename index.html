@@ -10,10 +10,12 @@
 </head>
 
 <body>
+<!-- SDK de Facebook -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" 
   src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="ABC123">
 </script>
+
 <!-- Menú -->
 <header>
 <nav>
@@ -28,13 +30,8 @@
 
 <!-- RADIO -->
 <div class="player">
-
 <h2>📻 Camino al Bienestar</h2>
-
-<p class="estado">
-<span class="live"></span> EN VIVO
-</p>
-
+<p class="estado"><span class="live"></span> EN VIVO</p>
 <button class="play-btn" onclick="toggleRadio()">▶ Escuchar</button>
 
 <div class="ondas" id="ondas">
@@ -48,7 +45,6 @@
 <audio id="radio">
 <source src="http://caminoalbienestar.radio12345.com/" type="audio/mpeg">
 </audio>
-
 </div>
 
 <h1 class="titulo">Terapias Complementarias online</h1>
@@ -67,7 +63,6 @@
 </section>
 
 <div class="cards">
-
 <div class="card">
 <h3>Péndulo Hebreo</h3>
 <p>Terapia de limpieza energética profunda que detecta y elimina energías negativas del campo áurico utilizando frecuencias hebreas.</p>
@@ -102,22 +97,22 @@
 <h3>Limpieza energética</h3>
 <p>Proceso de liberación de energías densas del campo áurico y de los espacios.</p>
 </div>
-
 </div>
 
 <div class="buda">
 <img class="tamanio_buda" src="imagenes/buddha-5967397_1280.jpg">
 </div>
 
+<!-- Sección de comentarios de Facebook -->
+<h2>💬 Comentarios</h2>
 <div class="fb-comments" 
-     data-href="https://www.facebook.com/diana.maria.cigandaterapias/" 
+     data-href="https://www.facebook.com" 
      data-width="100%" 
      data-numposts="5">
 </div>
+
 <h3>Sos el visitante N°</h3>
-
 <div id="sfcj1bd4z6xqtfddhgps85hrf22aspnqulq"></div>
-
 <script type="text/javascript"
 src="https://counter2.optistats.ovh/private/counter.js?c=j1bd4z6xqtfddhgps85hrf22aspnqulq&down=async"
 async></script>
@@ -125,40 +120,30 @@ async></script>
 <script src="/menu/java/java_2.js"></script>
 
 <script>
-
 let radio = document.getElementById("radio");
 let btn = document.querySelector(".play-btn");
 
 function toggleRadio(){
-
-if(radio.paused){
-radio.play();
-btn.innerHTML="⏸ Pausar";
-}
-else{
-radio.pause();
-btn.innerHTML="▶ Escuchar";
-}
-
+    if(radio.paused){
+        radio.play();
+        btn.innerHTML="⏸ Pausar";
+    } else {
+        radio.pause();
+        btn.innerHTML="▶ Escuchar";
+    }
 }
 
 let items = document.querySelectorAll(".lista li");
 let cards = document.querySelectorAll(".card");
 
 items.forEach((item,index)=>{
-
-item.addEventListener("click",()=>{
-
-cards.forEach(card=>{
-card.classList.remove("activa");
+    item.addEventListener("click",()=>{
+        cards.forEach(card=>{
+            card.classList.remove("activa");
+        });
+        cards[index].classList.add("activa");
+    });
 });
-
-cards[index].classList.add("activa");
-
-});
-
-});
-
 </script>
 
 <footer>
