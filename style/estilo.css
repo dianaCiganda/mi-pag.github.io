@@ -278,3 +278,41 @@ to{opacity:1;transform:translateY(0);}
 margin:40px auto;
 max-width:700px;
 }
+/* REPRODUCTOR RADIO */
+
+.player{
+background:linear-gradient(145deg,#1e293b,#020617);
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+text-align:center;
+width:320px;
+color:white;
+margin:40px auto;
+}
+
+.player h2{
+margin-bottom:10px;
+font-size:22px;
+}
+
+.player p{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.play-btn{
+background:#22c55e;
+border:none;
+padding:15px 25px;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+color:white;
+transition:0.3s;
+}
+
+.play-btn:hover{
+background:#16a34a;
+transform:scale(1.05);
+}
