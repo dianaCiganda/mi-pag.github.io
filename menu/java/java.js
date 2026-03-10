@@ -35,3 +35,8 @@ btnRigth.addEventListener("click",function(){
        setInterval(() => {
         move_next()
        }, 5000);
+       window.onload = function(){
+if(typeof FB !== "undefined"){
+FB.XFBML.parse();
+}
+}
